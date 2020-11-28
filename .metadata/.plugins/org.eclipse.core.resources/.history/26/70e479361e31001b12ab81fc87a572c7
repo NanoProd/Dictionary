@@ -1,0 +1,21 @@
+package subDictionary;
+
+import java.util.ArrayList;
+
+public class Dictionary {
+	//attributes
+	private int count;
+	private ArrayList<String> words; 
+	private String fileName;
+	
+	//setters
+	
+	//getters
+	
+	//constructors
+	
+	//methods to find special characters
+	
+	//
+	
+}

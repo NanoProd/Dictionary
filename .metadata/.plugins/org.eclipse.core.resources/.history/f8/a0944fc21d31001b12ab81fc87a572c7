@@ -1,0 +1,17 @@
+package subDictionary;
+
+public class Dictionary {
+	//attributes
+	private int count;
+	
+	//setters
+	
+	//getters
+	
+	//constructors
+	
+	//methods to find special characters
+	
+	//
+	
+}

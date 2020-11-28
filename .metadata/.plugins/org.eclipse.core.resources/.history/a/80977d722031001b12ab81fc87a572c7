@@ -1,0 +1,69 @@
+package subDictionary;
+
+import java.util.ArrayList;
+
+public class Dictionary {
+	//attributes
+	private int count;
+	private String fileName;
+	private ArrayList<String> A; 
+	private ArrayList<String> B; 
+	private ArrayList<String> C; 
+	private ArrayList<String> D; 
+	private ArrayList<String> E; 
+	private ArrayList<String> F; 
+	private ArrayList<String> G; 
+	private ArrayList<String> H; 
+	private ArrayList<String> I; 
+	private ArrayList<String> J; 
+	private ArrayList<String> K; 
+	private ArrayList<String> L; 
+	private ArrayList<String> M; 
+	private ArrayList<String> N; 
+	private ArrayList<String> O; 
+	private ArrayList<String> P; 
+	private ArrayList<String> Q; 
+	private ArrayList<String> R; 
+	private ArrayList<String> S; 
+	private ArrayList<String> T; 
+	private ArrayList<String> U; 
+	private ArrayList<String> V; 
+	private ArrayList<String> W; 
+	private ArrayList<String> X; 
+	private ArrayList<String> Y; 
+	private ArrayList<String> Z; 
+
+	
+	//setters
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	//getters
+	public int getCount() {
+		return count;
+	}
+	public String getFileName() {
+		return fileName;
+	}
+	
+	//constructors
+	public Dictionary() {
+		count = 0;
+		fileName = "";
+		words = new ArrayList<String>();
+		
+	}
+	public Dictionary(String fileName) {
+		this.fileName = fileName;
+	}
+	//methods to find special characters
+	public String getWord() {
+		
+		
+		
+		
+		return "";
+	}
+	
+	
+}

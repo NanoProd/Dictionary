@@ -1,0 +1,29 @@
+package subDictionary;
+
+import java.util.ArrayList;
+
+public class Dictionary {
+	//attributes
+	private int count;
+	private ArrayList<String> words; 
+	private String fileName;
+	
+	//setters
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	//getters
+	public int getCount() {
+		return count;
+	}
+	public int getFileName() {
+		return fileName;
+	}
+	
+	//constructors
+	
+	//methods to find special characters
+	
+	//
+	
+}
