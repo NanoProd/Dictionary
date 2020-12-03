@@ -904,9 +904,6 @@ public class Dictionary {
 		} catch (IOException e) {
 			System.out.println(e.toString());
 		}
-		System.out.println("Done!");
-		//close keyboard
-		ip.close();
 
 	}
 
