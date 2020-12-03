@@ -44,7 +44,10 @@ public class Dictionary {
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}
-
+	//increase count
+	public void increaseCount(){
+		count++;
+	}
 	// getters
 	public int getCount() {
 		return count;
@@ -212,6 +215,20 @@ public class Dictionary {
 				return false;
 			}
 		}
+		//check for different type of apostrophe
+		if ((word.indexOf("’")) >= 0) {
+			index = word.indexOf("’");
+			if (index == word.length() - 1) {
+				return false;
+			}
+			char temp = word.charAt(index + 1);
+			String next = Character.toString(temp);
+			if ((next.equalsIgnoreCase("m")) || (next.equalsIgnoreCase("s"))) {
+
+			} else {
+				return false;
+			}
+		}
 		// check for , -- can only appear at end of word
 		if ((word.indexOf(",")) >= 0) {
 			index = word.indexOf(",");
@@ -285,10 +302,17 @@ public class Dictionary {
 			str = str.toUpperCase();
 			return str;
 		}
-		// check for apostrophe -- can only appear in front of m or s, if not returns
+		// check for apostrophes -- can only appear in front of m or s, if not returns
 		// true
 		if ((word.indexOf("'")) >= 0) {
 			index = word.indexOf("'");
+			str = word.substring(0, index);
+			str = str.toUpperCase();
+			return str;
+		}
+		//different type of apostrophee
+		if ((word.indexOf("’")) >= 0) {
+			index = word.indexOf("’");
 			str = word.substring(0, index);
 			str = str.toUpperCase();
 			return str;
@@ -395,7 +419,7 @@ public class Dictionary {
 		// read from the file
 		BufferedReader inputStream;
 		try {
-			inputStream = new BufferedReader(new FileReader("PersonOfTheCentury.txt"));
+			inputStream = new BufferedReader(new FileReader(dict.getFileName()));
 			String line;
 			boolean valid = true;
 			while (valid) {
@@ -416,159 +440,185 @@ public class Dictionary {
 									break;
 								}
 								dict.A.add(word);
+								dict.increaseCount();
 								break;
 							case "B":
 								if (dict.B.contains(word)) {
 									break;
 								}
 								dict.B.add(word);
+								dict.increaseCount();
 								break;
 							case "C":
 								if (dict.C.contains(word)) {
 									break;
 								}
 								dict.C.add(word);
+								dict.increaseCount();
 								break;
 							case "D":
 								if (dict.D.contains(word)) {
 									break;
 								}
 								dict.D.add(word);
+								dict.increaseCount();
 								break;
 							case "E":
 								if (dict.E.contains(word)) {
 									break;
 								}
 								dict.E.add(word);
+								dict.increaseCount();
 								break;
 							case "F":
 								if (dict.F.contains(word)) {
 									break;
 								}
 								dict.F.add(word);
+								dict.increaseCount();
 								break;
 							case "G":
 								if (dict.G.contains(word)) {
 									break;
 								}
 								dict.G.add(word);
+								dict.increaseCount();
 								break;
 							case "H":
 								if (dict.H.contains(word)) {
 									break;
 								}
 								dict.H.add(word);
+								dict.increaseCount();
 								break;
 							case "I":
 								if (dict.I.contains(word)) {
 									break;
 								}
 								dict.I.add(word);
+								dict.increaseCount();
 								break;
 							case "J":
 								if (dict.J.contains(word)) {
 									break;
 								}
 								dict.J.add(word);
+								dict.increaseCount();
 								break;
 							case "K":
 								if (dict.K.contains(word)) {
 									break;
 								}
 								dict.K.add(word);
+								dict.increaseCount();
 								break;
 							case "L":
 								if (dict.L.contains(word)) {
 									break;
 								}
 								dict.L.add(word);
+								dict.increaseCount();
 								break;
 							case "M":
 								if (dict.M.contains(word)) {
 									break;
 								}
 								dict.M.add(word);
+								dict.increaseCount();
 								break;
 							case "N":
 								if (dict.N.contains(word)) {
 									break;
 								}
 								dict.N.add(word);
+								dict.increaseCount();
 								break;
 							case "O":
 								if (dict.O.contains(word)) {
 									break;
 								}
 								dict.O.add(word);
+								dict.increaseCount();
 								break;
 							case "P":
 								if (dict.P.contains(word)) {
 									break;
 								}
 								dict.P.add(word);
+								dict.increaseCount();
 								break;
 							case "Q":
 								if (dict.Q.contains(word)) {
 									break;
 								}
 								dict.Q.add(word);
+								dict.increaseCount();
 								break;
 							case "R":
 								if (dict.R.contains(word)) {
 									break;
 								}
 								dict.R.add(word);
+								dict.increaseCount();
 								break;
 							case "S":
 								if (dict.S.contains(word)) {
 									break;
 								}
 								dict.S.add(word);
+								dict.increaseCount();
 								break;
 							case "T":
 								if (dict.T.contains(word)) {
 									break;
 								}
 								dict.T.add(word);
+								dict.increaseCount();
 								break;
 							case "U":
 								if (dict.U.contains(word)) {
 									break;
 								}
 								dict.U.add(word);
+								dict.increaseCount();
 								break;
 							case "V":
 								if (dict.V.contains(word)) {
 									break;
 								}
 								dict.V.add(word);
+								dict.increaseCount();
 								break;
 							case "W":
 								if (dict.W.contains(word)) {
 									break;
 								}
 								dict.W.add(word);
+								dict.increaseCount();
 								break;
 							case "X":
 								if (dict.X.contains(word)) {
 									break;
 								}
 								dict.X.add(word);
+								dict.increaseCount();
 								break;
 							case "Y":
 								if (dict.Y.contains(word)) {
 									break;
 								}
 								dict.Y.add(word);
+								dict.increaseCount();
 								break;
 							case "Z":
 								if (dict.Z.contains(word)) {
 									break;
 								}
 								dict.Z.add(word);
+								dict.increaseCount();
 								break;
 							default:
-								System.out.println("Error with first char");
+								System.out.println("Unusual behaviour");
 								break;
 						}
 					}
@@ -582,10 +632,42 @@ public class Dictionary {
 			System.exit(0);
 		}
 
+		//sort the craeted array lists alphabetically
+		dict.A.sort(String::compareToIgnoreCase);
+		dict.B.sort(String::compareToIgnoreCase);
+		dict.C.sort(String::compareToIgnoreCase);
+		dict.D.sort(String::compareToIgnoreCase);
+		dict.E.sort(String::compareToIgnoreCase);
+		dict.F.sort(String::compareToIgnoreCase);
+		dict.G.sort(String::compareToIgnoreCase);
+		dict.H.sort(String::compareToIgnoreCase);
+		dict.I.sort(String::compareToIgnoreCase);
+		dict.J.sort(String::compareToIgnoreCase);
+		dict.K.sort(String::compareToIgnoreCase);
+		dict.L.sort(String::compareToIgnoreCase);
+		dict.M.sort(String::compareToIgnoreCase);
+		dict.N.sort(String::compareToIgnoreCase);
+		dict.O.sort(String::compareToIgnoreCase);
+		dict.P.sort(String::compareToIgnoreCase);
+		dict.Q.sort(String::compareToIgnoreCase);
+		dict.R.sort(String::compareToIgnoreCase);
+		dict.S.sort(String::compareToIgnoreCase);
+		dict.T.sort(String::compareToIgnoreCase);
+		dict.U.sort(String::compareToIgnoreCase);
+		dict.V.sort(String::compareToIgnoreCase);
+		dict.W.sort(String::compareToIgnoreCase);
+		dict.X.sort(String::compareToIgnoreCase);
+		dict.Y.sort(String::compareToIgnoreCase);
+		dict.Z.sort(String::compareToIgnoreCase);
+
+
+
+
 		// write to file
 		PrintWriter os = null;
 		try {
 			os = new PrintWriter(new FileWriter("SubDictionary.txt"));
+			os.write("The document produced this sub-dictionary, which includes " + dict.getCount() + " entries." + "\n");
 			for (String content : dict.A) {
 				os.write(content + "\n");
 			}
